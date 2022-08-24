@@ -1,0 +1,109 @@
+
+A partir da página 25
+
+Aspectos da segurança da tecnologia Blockchain: 
+
+- Segurança em camadas
+- Vulnerabilidades comuns
+- Privacidade e anonimato
+- SEgurança de contratos inteligentes
+- Ataques específicos contra criptomoedas 
+
+
+Camadas de segurança de um blockchain 
+
+Qualquer blockchain e aplicações construídas com ele devem ter as camadas de segurança. As camadas são fruto de boas práticas presentes em livros texto na área. 
+
+	Segurança da transação é a camada fundamental e umas das coisas que definem uma blockchain. Essa camada diz respeito a validação das transações com confiança e previsibilidade no fim do consenso. 
+O consenso confirma a finalidade e a imutabilidade de de transação. 
+São proteções sintáticas e estruturais para as transações e os blocos que as contém. As proteções não impedem fraudes semânticas associadas à logica da aplicação. 
+	
+	Segurança da conta do usuário é a segunda camada. Não confundir com a segurança do software cliente, que no caso seria a segurança nos aplicativos de uso pessoal (eWallets). 
+Dois fatores influenciam a camada: a conscientização dos usuários no uso seguro, e a implementação correta dos mecanismos de segurança para dispositivos móveis e sistemas web. 
+	
+	Segurança da aplicação e dos chaincodes seria a terceira camada. Nesta camada, temos o desenvolvimento seguro do software, incluindo a definição de requisitos de segurança, avaliação de arquitetura, 
+testes de segurança da aplicação e a codificação segura de smart contracts. Chaincodes são programas escritos em go, nodejs ou java que implementa uma interface prescrita. O chaincode inicializa e gerencia o 
+estado da razão entre transações feitas por aplicativos.			
+Smart contracts são contratos feitos em código a partir de regras definidas pelas partes do contrato, e o contrato é executado de forma
+automática. A maior diferença entre esse tipo de contrato e um contrato normal é que não é necessário terceiros para aplicar as regras do contrato nem para fortalecer o acordo, visto que o acordo é feito 
+por código.
+
+	Segurança de implantação e da operação da aplicação seria a quarta camada. Aqui ficam os testes de aceitação e homologação da aplicação e dos chaincodes antes de implantação em produção. Daí, a aplicação
+deve ser monitorada para detecção de anomalias de funcionamento e comportamento. 
+	Segurança da rede P2P dos nós é a quinta camada. P2P é uma arquitetura de redes na qual cada dispositivo conectado a rede realiza as funções de servidor e cliente da mesma forma, ou seja todos os dispo-
+sitivos podem tanto ser clientes que requerem dados quanto servidores, que fornecem esses dados para os clientes. Ou seja, é descentralizado. Nessa camada, queremos garantir a proteção dos nós da rede P2P do 
+blockchain, então fazemos uso de mecanismos de proteção tradicionais de redes de computadores (firewall, IDS,IPS, etc). Além disso, devemos ter proteções específicas para a segurança do protoloco de comunicação
+e de consenso, ou seja que a comunicação e consenso entre os nós não seja interrompido.
+
+	 Governança da aplicação e do blockchain é a sexta e última camada. Esta camada se refere à governança da aplicação e do blockchain. Essa camada embarca decisões sobre a estrutura e projeto do 
+blockchain que afetam o funcionamento com segurança, controles antifraude, auditoria, privacidade, entre outros. 
+
+Defeitos comuns em blockchain
+
+	Falando de software, os defeitos mais comuns são, do mais frequente pro menos: 
+
+- Semânticos
+- Ambiente e configurações
+- Interface gráfica
+- Concorrência
+- Build
+- Segurança
+- Alocação de memória
+- Desempenho 
+- Compatibilidade
+- Bifurcação da ledger  
+
+	Ledger é um arquivo digital que segue todas as transações na rede. 
+
+	Normalmente, defeitos semânticos afetam também a segurança das aplicações, uma vez que diferenças entre requisitos e a intenção do programador podem facilitar a fraude (ataque DAO).O ataque DAO foi um ataque 
+feito a uma rede de blockchain na qual foi utilizado as regras do programador contra eles, de forma que foi possível retirar tokens da rede a partir de uma vulnerabilidade no programa. Outro exemplo é a transa-
+ção para endereços inexistentes. (possível no Bitcoin). 
+
+    	Os defeitos de segurança não são novos e são relacionados a occorências específicas de vulnerabilidades específicas, como overflow de inteiros no timestamp de um bloco causado por minerador malicioso, 
+ataques por canal lateral de tempo (timing attack), e vulnerabilidades de SSL/TLS relacionadas à validação incompleta de certificados.
+	 
+	Tradicionalmente, no blockchain, a privacidade é limitada por dois aspectos: um é o pseudo-anonimato da transação e o segundo é o fato de todas as transações não terem  criptografia para sigilo. 
+O termo pseudo-anonimato é utilizado devido a análise das correlações entre transações, os endereços de destino e outros metadados derivados da lógica da aplicação faciitam a revelação da identidade do usuário. 
+Ex: analisando as transações de origem e dos endereços de destino das transações, podemos identificar as movimentações financeiras entre endereços específicos, ou seja padrões de relacionamento entre usuários. 
+As eWallets possuem vulnerabilidades, e a exploração das mesmas facilita o roubo de criptomoedas e também revelar a identidade do usuário. 
+
+	A segurança dos smart contracts é analisada por dois aspectos: defeitos de segurança comuns a várias plataformas de smart contracts e vulnerabilidades específicas à Etherium, a plataforma de smart con-
+tracts mais usada atualmente. Quatro vulnerabilidades são mais conhecidas em smart contracts: 
+- A dependência da ordem de transações: ordem que as transações são executadas por um smart contract pode alterar o resultado final deste chaincode. 
+- A dependência do carimbo de tempo: há contratos que usam o carimbo de tempo da transação (timestamp) como gatilho ou condição  para algum comando importante. 
+- O tratamento defeituoso de exceções: quando um smart contract aciona outro, ele deve estar preparado para o caso de que o contrato chamado não execute a sua função corretamente. 
+- A vulnerabilidade de código reentrante: dois contratos mutualmente dependentes acessam estados intermediários um do outro. 
+
+Relativas ao etherium, sa vulnerabilidades mais comuns são: as da linguagens de programação Solidity, as da máquina virtual Etherium (EVM), e as associadas ao Blockchain Ethereum.
+
+Em relação a ataques específicos contra criptomoedas, o mais comum são o de double spending de bitcoins. 
+
+Há outros tipos de ataques bem documentados, como o 51% attack e o race attack, entre outros. 
+
+
+Considerações finais 
+
+No fim, o whitepaper discutiu dois assuntos importantes do universo Blockchain: desenvolvimento de aplicações e segurança de software. O objetivo é fomentar o desenvolvimento de aplicações seguras blockchain. 
+Blockchain é uma tecnologia em que a prática parece estar a frente da teoria em vários aspectos. O nível de discentralização da Blockchain era considerado intangível na teoria, mas a abordagem de que pequenas
+falhas são aceitas pelo sistema de consenso permite a tecnlogia na prática. 
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+https://www.acunetix.com/blog/web-security-zone/what-is-beast-attack/
+https://en.wikipedia.org/wiki/Padding_oracle_attack
+https://en.wikipedia.org/wiki/Timing_attack
+https://www.coindesk.com/learn/2016/06/25/understanding-the-dao-attack/
+https://www.ledger.com/academy/how-does-a-blockchain-transaction-work
+

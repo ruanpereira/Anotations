@@ -1,0 +1,8 @@
+------ Início do livro (antes do cap 1)
+
+
+Machine learning parece ser definido como sendo programas capazes de aprender com dados.
+
+numpy, pandas, e matplotlib são necessárias (aprendo enquanto estiver usando)
+
+

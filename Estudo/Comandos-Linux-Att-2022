@@ -1,0 +1,51 @@
+##LISTA DE COMANDOS DO LINUX ATUALIZADO 2022 LOQUENDO RECEBA!!! ##
+
+mkdir NOMEDAPASTA - criar uma pasta
+nano NOMEDOARQUIVO/ touch NOMEDOARQUIVO - criar um arquivo de texto de sua escolha
+ip a(adress) - configurações de ip e de rede/mascara etc
+man NOMEDOCOMANDO - ajuda sobre o comando, basicamente um dicionário do mesmo
+# ALGO - comentário
+COMANDO& - comando em específico roda em 2° plano
+exit - vomando
+rm - remove arquivos e pastas  /use man para saber quais modificadores vc deve botar no comando/
+cd CAMINHO/DO/ARQUIVO - entra em diretórios
+pwd - mostra o diretório atual
+chmod - muda permissões
+sudo - modo ADEMIR 
+find NOME - procura por arquivos e diretórios
+ping ENDEREÇO - pinga para o endereço, testa internet 
+killall NOMEDOPROGRAMA - mata o processo com o nome
+top - mostra todos os processos
+kill IDPROCESSO - mata o processo de acordo com o ID
+diff ARQ1 ARQ 2 - compara 2 arquivos
+apt-get NOMEPROGRAM - instala programas (debian)
+pacman -S NOMEDOPROGRAMA - instala programas (arch)
+sudo dmidecode
+hwinfo 
+convert -filter Cubic -resize 200 old.jpg new.jpg --converter imagens para tantos pixels
+/opt -- diretório para instalação de programas no linux
+PATH -- local onde podemos vizualizar todos os programas a serem 
+acessados por todos os diretórios
+echo $PATH -- ver os diretórios com os programas acessados "globalmente"
+export PATH=$PATH:/place/with/the/file -- nessa ins
+
+
+
+## COMANDOS DE COMPACTAÇÃO ## FAMOSO TAR.GZ PRA N SE PERDER
+
+tar -zcf NOVO.TAR.gz /CAMINHO/DO/ARQUIVO ou arquivo - compactar (z =zip c =compact f=file)
+tar -zxf /CAMINHO/DO/ARQUIVO ou arquivo - descompactar (z = zip x = extract f = file)
+
+## TAR SÓ PRA JUNTAR, SEM COMPACTAR (VAI Q TU QUER ISSO) ##
+
+tar -cf ARQUIVO.tar arquivo - só junta eles ( c = comprimir f = file)
+tar -xf ARQUIVO.tar - extrair (x = extrai f = file)
+
+##COMANDO RAR PQ LINUX FAZ TUDO ##
+rar a ARQUIVO.rar arquivo - compacta arquivos (a = adiciona)
+unrar arquivo.rar - descompacta 
+
+--------> PARA XZ E MAIS VAI PROCURAR AE
+
+
+

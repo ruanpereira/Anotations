@@ -1,0 +1,50 @@
+Curso básico anotações: 
+
+- ";" esconde o resultado da operação da janela de comando. 
+
+- os nomes são case sensitive e as variáveis devem começar com letras
+
+- a variável não é alterada ao menos que ocorra uma operação com ela. 
+- clean limpa o workspace de variáveis, clc limpa a janela de comando 
+
+- para salvar um arquivo .mat use save filename
+
+- para carregar um arquivo .mat use load filename
+
+- há funçõs prontas para calcular alguns valores (python com aquela lib de matematica)
+
+- podemos controlar o tamanho das variáveis com format long ou format short
+
+- podemos criarc arrays de n linhas com o comando [x y ...] (1 linha por n colunas)
+
+- podemos criar arrays de n colunas com o comando [ x;3;...] (n linhas por 1 coluna
+
+- para criar matrizes, coloque linha por linha. Ex: x = [3 4 5; 6 7 8]
+
+- podemos criar um vetor de linhas, alternativamente, assim: y = 1 : 2 : 3 : 4 : 5  
+
+- podemos também setar espaçamento do tamanho que quisermos.  Ex: x = 20:2:26
+
+- se saber o numero de elementos que vc quer no vetor, faz linspace(primeiro,ultimo, number_of_elements)
+
+- para transpor um vetor, use ' . 
+
+- funciona tanto para o vetor já criado, quando na criação 
+
+- há funções que criam matrizes automaticamente, exemplo rand(2), que cria uma matriz de num random 2x2
+
+- podemos controlar o numero de linhas e colunas com rand(x,y)
+
+- para pegar o tamanho de uma matriz=, use size(x)
+
+- podemos aproveitar o tamanho de outra matriz e criar outra com o mesmo tamanho, ex : rand(size(x))
+
+- podemos percorrer a array para pegar valores especificos (index) 
+
+- para conseguir um vlaor de um array de 1 linha, use x(y). Para conseguir o valor de um array com mais de um index, use x (y:z) [y a z]
+
+- para matrix, x(z,y) [linha,coluna]
+
+- para tirar uma coluna inteira ou linha de uma matriz, use x(1,:) dois pontos são lidos como tudo aquilo. 
+
+- 

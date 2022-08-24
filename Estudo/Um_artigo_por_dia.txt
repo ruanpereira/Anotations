@@ -1,0 +1,62 @@
+dia 21/07/22 Article name: a large scale study of programming languages and code quality in github
+
+- Dynamic vc static languages, weak vs strong languages
+
+	É relacionado ao tipo de variável que a linguagem usa. JS é um tipo de linguagem cujos tipos 
+de variáveis não são bem definidos, podendo ser alterados durante a "compilação" de acordo com a 
+necessidade do código. Já C é uma linguagem na qual os tipos são bem definidos, e para usar uma 
+variável deve especificar o tipo e como ela vai ser usada. Caso haja algum tipo de variável fora do 
+padrão, a compilação é interrompida e o código não é compilado.
+	Cada linguagem tem a sua própria tipagem, sua própria forma de tratar os tipos de variáveis.
+Alguns são mais estritos e definidos, outros mais adaptáveis e relaxados. Daí que temos a definição de
+weak e strong languages. Uma linguagem fraca, significa uma linguagem que não tem muitas regras a res
+peito da tipagem das variáveis, que pode ser alterada dependendo da necessidade da compilação, etc. 
+Uma linguagem forte tem regras, não permite alteração de variáveis. Uma vez dita a variável como 
+sendo de tipo a, ela deve ser assim até que seja feita uma operação que altere. 
+	A maior diferença entre weak e strong é a verbalidade, o quanto vc tem que digitar e o quanto
+o código fica fácil de entender, sem operações feitas por baixo dos panos. Códigos com linguagem weak 
+tendem a ser menores, com menos linhas de código, mas com mais dificuldade para entendimento de ter-
+ceiros. Muitas operações podem ser feitas pelo "compilador", por baixo dos panos. Agora, códigos com
+linguagem strong são mais fáceis de entender, pois tudo está escrito, então não há espaço para confu-
+são. Porém os códigos são maiores, com mais linhas. 
+	A diferença entre static e dinamic languages vem diretamente da forma que o código é interpre-
+tado pela máquina, e onde é realizada a checagem da tipagem das variáveis. Códigos que são primeira-
+mente compilados (compile time) antes de serem interpretados pela máquina (rodarem, runtime), verifi-
+cam as variáveis ai, normalmente. Caso tenha algo errado, o código não compila e o erro é retornado 
+pelo compilador. Isso é uma linguagem estatica. Códigos que não precisam ser compilados, em que os re-
+sultados podem ser consultados no programa já rodando, junto com os erros, as varíaveis são checadas
+durante o runtime. Isso caracteriza uma linguagem dinâmica.
+
+https://hexlet.io/courses/intro_to_programming/lessons/types/theory_unit REFERẼNCIA 
+	
+-Linguagem funcional e procedural
+
+	A computação apresenta duas aproximações gerais para a programação(paradigmas, que são estilos
+de construir a estrutura e elementos de programas):
+	- Programação imperativa: 
+		É o tipo de programa focado em executar algo, em usar declarações, instruções e fun-
+ções para alterar o estado de um programa(lembrança de uma interação com o usuário ou eventos anteriores.
+Ex: algoritmos, c, c++
+ 
+	- Programação declarativa:
+		 Focado em o que executar, expressa a lógica de um processamento sem descrever a ordem
+das funções, estados e instruções(control flow). Apenas focado em saber o que o programa tem que resol-
+ver quando ver o domínio do problema, ao inves de descrever como completar o problema (imperativa). 
+Ex: SQL, XQuery, programação lógica. 
+ 
+	Daí, derivam-se três paradigmas que são usados ativamente: 
+	- Programação procedural:
+		Vem da imperativa, trabalha principalmente com o conceito de procedure calls. Um proc-
+edimento é uma série de passos computacionais a serem seguidos. O foco desse tipo de programação é de 
+quebrar uma tarefa de programação em variáveis, estruturas de data, e surbrotinas (procedure). 
+	
+	- Programação funcional:
+	
+	- POO(Programação orientada ao objeto): 
+		Baseada no conceito de objetos, que podem ter informações ou códigos: informação em for- 
+ma de campos(atributos ou propriedades), e códigos como procedimentos (métodos). Funciona na prática
+com os procedimentos são juntados aos objetos para que acessem e modifiquem a informação do objeto. 
+As mais populares são baseadas em classe, logo os objetos são instÂncias de classes, o que já diz
+seu tipo.  
+		
+https://en.wikipedia.org/wiki/Comparison_of_programming_paradigms REFERENCIA

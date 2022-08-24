@@ -1,0 +1,21 @@
+Primeiramente, atualizar o sistema do rasp
+
+Depois, realizar a instalação por:
+
+- git clone https://github.com/goodtft/LCD-show.git 
+
+chmod -R 755 LCD-show 
+
+cd LCD-show/
+
+sudo ./LCD35-show
+
+caso precise voltar pra outra tela, faça
+
+chmod -R 755 LCD-show 
+
+cd LCD-show/ 
+
+sudo ./LCD-hdmi
+ 
+ "VER VIDEO NO NAO ESQUECER, PESQUISAR POR TELA"

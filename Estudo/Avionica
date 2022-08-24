@@ -1,0 +1,18 @@
+Aviônica Seara
+
+Estabelecer a comunicação entre os dois módulos LoRa;
+Conseguir transmitir as coordenadas utilizando o módulo GPS;
+Entender como funciona o acionamento do paraquedas em outros projetos e desenvolver um sistema para isso;
+ Conseguir transmitir dados de vários sensores ao mesmo tempo [1];
+Além de fazer a transmissão, o foguete deverá ser responsável por salvar os dados da telemetria de maneira offline (cartão de memória);
+Desenvolver um dashboard (pode ser em python) para exibir a telemetria do foguete em tempo real [2];
+
+
+Pontos de atenção
+Combinar com os demais times o tamanho/massa máxima da seção de aviônica;
+Evitar embarcar os sensores em testes estáticos (perigoso perder tudo no começo);
+Fazer o teste de distância máxima do LoRa (pode ser em solo);
+
+[1] Principalmente os dados dos sensores de: GPS, barômetro e acelerômetro.
+[2] Vídeo de referência
+[3] Canal de referência 

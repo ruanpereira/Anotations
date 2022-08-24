@@ -1,0 +1,35 @@
+C++ Anotations
+
+Estrutura básica de um programa em C++: 
+
+#include <iostream> %invocando bibliotecas com funcões a serem utilizadas no código%
+using namespace std; % "usando espaço de palavras padrão", usado para usar os recursos de entrada e saída da biblioteca iostream, define todas as funções da biblioteca padrão.%
+
+int main()  %início de todo programa em C++%
+{
+
+	return 0;     %as chaves são o começo e o fim de uma função, o corpo da função. Tudo dentro das chaves indica o que a função faz quando executada%
+}
+
+
+Operadores relacionais: 
+
+>= maior que ou igual
+<= menor que ou igual 
+== igual a
+!= nao é igual 
+
+
+A sintaxe do if/else é do tipo: 
+
+if (condição) {
+	//faz isso
+
+}
+else (
+	//faça isso
+}
+
+Loop executa algo repetidamente a partir de uma condição
+
+
